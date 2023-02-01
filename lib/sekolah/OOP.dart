@@ -133,15 +133,32 @@
 
 //polymorphism
 
-class Employee{
+// class Employee{
+//   String? name;
+//
+//   Employee(this.name);
+// }
+//
+// class Manager extends Employee{
+//   Manager(String name): super(name);
+// }
+// class Director extends Employee{
+//   Director(String name): super(name);
+// }
+
+//abstract
+
+abstract class Location{
   String? name;
-
-  Employee(this.name);
 }
 
-class Manager extends Employee{
-  Manager(String name): super(name);
+class City extends Location{
+  City(String name){
+    this.name = name;
+  }
 }
-class Director extends Employee{
-  Director(String name): super(name);
+
+void main(){
+  //var location = Location();
+
 }
